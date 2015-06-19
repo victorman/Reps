@@ -13,6 +13,7 @@ public class MainActivity extends Activity {
     private int clicks1 = 0;
     private Button button0;
     private Button button1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
