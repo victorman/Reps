@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
         buttonAdd = new Button(this);
         buttonAdd.setText("+");
         layout.addView(buttonAdd);
-        
+
         final Integer start = 1;
         Button firstButton = makeButton(start - 1);
         intList.add(start);
@@ -61,7 +61,6 @@ public class MainActivity extends Activity {
         });
 
         setContentView(layout);
-
     }
 
     private Button makeButton(final int position){
@@ -69,10 +68,10 @@ public class MainActivity extends Activity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int n = intList.get(position) * 2;
+                Integer n = intList.get(position) * 2;
                 intList.set(position, n);
                 Button b = (Button) v;
-                b.setText("" + n);
+                b.setText(n.toString());
             }
         });
         return button;
